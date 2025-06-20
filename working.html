@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test Audio</title>
+</head>
+<body>
+  <button id="play">Play</button>
+  <button id="pause">Pause</button>
+
+  <script>
+    const audio = new Audio("https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3");
+
+    document.getElementById("play").addEventListener("click", () => {
+      audio.play();
+    });
+
+    document.getElementById("pause").addEventListener("click", () => {
+      audio.pause();
+    });
+  </script>
+</body>
+</html>
